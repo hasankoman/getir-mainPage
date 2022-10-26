@@ -1,6 +1,6 @@
 {
   "name": "getir-project",
-  "homepage": "http://hasankoman.github.io/getir-mainpage",
+  "homepage": "http://hasankoman.github.io/getir-mainPage",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
