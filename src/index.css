@@ -1,13 +1,52 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .--container {
+    @apply w-[92vw] 2xl:w-[50vw]  h-full mx-auto;
+  }
+  .nav-link {
+    @apply rounded-t-md flex items-center justify-center;
+  }
+  .nav-link a {
+    @apply py-3 px-4;
+  }
+  .nav-link:hover {
+    @apply bg-getir-purple-100;
+  }
+  .nav-link.active {
+    @apply bg-getir-purple-100;
+  }
+  .nav-btn {
+    @apply h-full px-2 flex items-center justify-center gap-3 text-getir-white text-sm;
+  }
+  .main-text {
+    text-shadow: rgb(0 0 0 / 10%) 0px 20px 10px;
+  }
+  .gradient {
+    background: linear-gradient(90deg, #5d3ebc 0%, rgba(93, 62, 188, 0) 100%);
+  }
+  .categories-item {
+    @apply col-span-1 hover:bg-getir-purple-100 hover:bg-opacity-20 h-[108px] rounded-sm;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.img-border {
+  border: 1px solid rgba(25, 25, 25, 0.1);
+}
+.shadow {
+  box-shadow: 0px 5px 10px -3px rgba(0, 0, 0, 0.185);
+}
+.download-section {
+  background-image: url(https://getir.com/_next/static/images/doodle-d659f9f1fd505c811c2331fe3ffddd5f.png);
+  background-color: #5d3ebc;
+}
+.about-shadow {
+  box-shadow: rgba(93, 62, 188, 0.459) 0px 6px 24px;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
 }
